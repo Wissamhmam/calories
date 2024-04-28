@@ -1,0 +1,113 @@
+body {
+    background-image: url('nuut.jpg');
+    background-size: cover; 
+    background-position: center; 
+    background-attachment: fixed; 
+}
+
+td {
+    padding-bottom: 10px;
+}
+
+
+.textfield {
+    height: 40px; /* Adjust the height as needed */
+    width: 280px; /* Full width within its container */
+    padding: 10px; /* Add some padding for spacing */
+    border: 1px solid #ccc; /* A subtle border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Font size for better readability */
+    transition: border-color 0.3s ease; /* Smooth transition on hover */
+}
+
+.textfield:focus {
+    outline: none; /* Remove default focus outline */
+    border-color: #04AA6D; /* Highlight border color on focus */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Add a subtle shadow on focus */
+}
+
+/* Custom select box styling */
+select {
+    appearance: none; /* Remove default styling */
+    background-color: #f9f9f9; /* Background color */
+    border: 1px solid #ccc; /* Border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px; /* Spacing inside the select box */
+    font-size: 16px; /* Font size */
+    width: 100%; /* Full width */
+    cursor: pointer; /* Show pointer cursor on hover */
+    transition: border-color 0.3s ease; /* Smooth transition on hover */
+}
+
+/* Hover effect */
+select:hover {
+    border-color: #04AA6D; /* Highlight border color on hover */
+}
+
+/* Focus effect */
+select:focus {
+    outline: none; /* Remove default focus outline */
+    border-color: #04AA6D; /* Highlight border color on focus */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Add a subtle shadow on focus */
+}
+
+.button {
+    background-color: #04AA6D; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 3px;
+    transition: background-color 0.4s, box-shadow 0.4s; /* Add smooth transitions */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    font-weight: 500; /* Slightly bolder font */
+}
+
+.button:hover {
+    background-color: #03915D; /* Darker green on hover */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* Slightly larger shadow on hover */
+}
+
+
+#page {
+    margin:  auto;
+    text-align: center;
+    background-color: rgb(206, 206, 206);
+    width: 500;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid rgb(149, 127, 127);
+}
+/* Custom radio button styling */
+input[type="radio"] {
+    appearance: none; /* Remove default styling */
+    -webkit-appearance: none; /* For Safari */
+    width: 20px; /* Set the desired size */
+    height: 20px;
+    border: 2px solid #000000; /* Border */
+    border-radius: 50%; /* Circular shape */
+    margin-right: 10px; /* Spacing between radio buttons */
+    position: relative;
+    top: 3px; /* Adjust vertical alignment */
+}
+
+/* Radio button label style */
+span {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #000000;
+}
+
+/* When radio button is checked */
+input[type="radio"]:checked::before {
+    content: "\2022"; /* Bullet character */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    color: #04AA6D; /* Highlight color */
+}
