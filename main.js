@@ -31,18 +31,9 @@ function calculateCalories(){
     }
 }
 document.getElementById("loginForm").addEventListener("submit", function(event) {
-    event.preventDefault(); // Prevent default form submission
-
-    // Check username and password (replace this with your authentication logic)
-    var username = document.getElementById("username").value;
-    var password = document.getElementById("password").value;
-
-    // Example authentication logic (replace this with your actual logic)
-    if (username === "a" && password === "p") {
-        // Redirect to the index page
-        window.location.href = "index.html";
-    } else {
-        // Display error message or handle unsuccessful login
-        alert("Invalid username or password. Please try again.");
+    // Prevent form submission if username or password is empty
+    if (document.getElementById("username").value.trim() === "" || document.getElementById("password").value.trim() === "") {
+        event.preventDefault(); // Prevent form submission
+        alert("Please enter both username and password.");
     }
 });

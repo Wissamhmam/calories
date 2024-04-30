@@ -6,6 +6,8 @@
     <title>Login Form</title>
     <link rel="stylesheet" href="style.css">
     <script src="main.js"></script>
+
+
     <style>
         .page {
             margin:  200px 600px auto;
@@ -16,16 +18,13 @@
 <body>
     <div class="page">
         <div class="login-container">
-            <form id="loginForm">
+            <form id="loginForm" action="login.php" method="post">
                 <h2>Login</h2>
-                <input type="text" placeholder="Username" class="textfield" required>
-                <input type="password" placeholder="Password" class="textfield" required>
-                <button type="submit" class="button">Login</button>
+                <input type="text" name="username" placeholder="Username" class="textfield" required>
+                <input type="password" name="password" placeholder="Password" class="textfield" required>
+                <button type="submit" name="submit" class="button">Login</button>
             </form>
-            <script src="main.js"></script>
-            
         </div>
     </div>
-    
 </body>
 </html>
